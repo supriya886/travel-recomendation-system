@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Explorer</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<marquee scrollamount="8">
+<h1>🌍 Travel Explorer - Your Dream Destination Awaits ✈️</h1>
+</marquee>
+</header>
+
+<nav>
+<a href="#" onclick="showPage('home')">Home</a>
+<a>Login</a>
+<a>Destinations</a>
+<a href="#" onclick="showPage('contact')">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+<div>
+<h1>Explore The World With Us ✈️</h1>
+<br>
+<button class="visit-btn" onclick="showPage('login')">Visit</button>
+</div>
+</section>
+
+<section class="section" id="login">
+<div class="container">
+<h2>Login Page</h2>
+<p>Login to explore amazing destinations 🌍</p>
+
+<input type="text" id="loginName" placeholder="Enter Name">
+<input type="email" id="loginEmail" placeholder="Enter Email">
+
+<button onclick="loginUser()">Login</button>
+<p id="loginResult"></p>
+</div>
+</section>
+
+<section class="section" id="destinations">
+<div class="container">
+<h2>Popular Destinations</h2>
+
+<div class="form-group">
+<select id="type">
+<option value="">Select Travel Type</option>
+<option value="beach">Beach</option>
+<option value="mountain">Mountain</option>
+<option value="historical">Historical</option>
+<option value="adventure">Adventure</option>
+</select>
+
+<select id="budget">
+<option value="">Select Budget</option>
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+</select>
+
+<select id="season">
+<option value="">Select Season</option>
+<option value="summer">Summer</option>
+<option value="winter">Winter</option>
+</select>
+
+<button onclick="getRecommendation()">Get Recommendation</button>
+<div id="result"></div>
+
+<button onclick="resetForm()">Cancel</button>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+
+<form onsubmit="return submitForm()">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 Travel Explorer | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>    

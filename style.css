@@ -1,0 +1,267 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+header{
+    background:#0077b6;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#023e8a;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Hero Section */
+.hero{
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+    height:770px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.5);
+    padding:15px;
+    border-radius:10px;
+    text-shadow:  2px 3px 2px rgb(197, 70, 70);
+    box-shadow: 1px 2px 3px 1px whitesmoke;
+}
+
+/* Sections */
+.section{
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+    height:770px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+#login {
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px 30px;
+    width: 380px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+}
+
+#login h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+#login p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+#login input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#login input:focus {
+    box-shadow: 0 0 10px #00b4d8;
+}
+
+#login button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(45deg, #667eea, #00b4d8);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+#loginResult {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.container {
+    background:#0077b6;
+    padding: 30px;
+    width: 580px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.form-group select, 
+.form-group button {
+    width: 90%;
+    padding: 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-left: 5%; 
+}
+
+button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+form{
+    max-width:400px;
+    margin:20px auto;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input, textarea{
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+footer{
+    background:#023e8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+#contact {
+    background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 770px;
+    color: white;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+#contact form {
+    background: rgba(121, 114, 114, 0.15);
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: rgba(24, 15, 15, 0.2);
+    color: rgb(32, 15, 15);
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    box-shadow: 0 0 10px #00b4d8;
+    background: rgba(255,255,255,0.3);
+}
+
+#contact button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.visit-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.visit-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}    
